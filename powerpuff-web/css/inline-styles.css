@@ -1,0 +1,265 @@
+/* Inline styles extracted from HTML templates */
+
+/* Критичный layout: без этого при загрузке «скачет» навбар и блоки под ним */
+.navbar-wrapper {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 10000 !important;
+    min-height: 90px;
+}
+#main-navbar,
+.main-navbar,
+nav.main-navbar {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 70px !important;
+    height: auto !important;
+}
+#main-navbar .navbar-container,
+.main-navbar .navbar-container,
+.navbar-container {
+    height: 70px !important;
+    min-height: 70px !important;
+}
+.page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.forum-page,
+.ladder-page {
+    min-height: 100vh;
+    background: #170e09;
+    margin-top: 0;
+    padding-top: 0;
+}
+.forum-header,
+.ladder-header {
+    height: 400px;
+}
+.forum-content,
+.ladder-content {
+    min-height: calc(100vh - 400px);
+}
+
+.VideoPane-fallback {
+    background-image: url('https://bnetcmsus-a.akamaihd.net/cms/template_resource/S6TGYRB8STLH1623254306716.jpg');
+}
+
+.Art--fadeBottom {
+    margin-bottom: -52.5%;
+}
+
+.Art-size {
+    padding-top: 90%;
+}
+
+.Position {
+    width: 100%;
+    height: calc(100% + 29px);
+    top: -29px;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+
+.Art--fitToHeight .Art-size {
+    padding-top: 33.666666666666664%;
+}
+
+.Position-alt {
+    width: 100%;
+    height: calc(100% + 50px);
+    top: -50px;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+.Art--fitToHeight-alt .Art-size {
+    padding-top: 40%;
+}
+
+.Art-image--bdmoxh9 {
+    background-image: url('../images/BDMOXH9OQ6B31594740408177.png');
+}
+
+.Art-image--eta7lq {
+    background-image: url('../images/ETA7LQVBODH61594740917046.png');
+}
+
+/* Mobile Video Background for Home Page - Same as wotlk page */
+@media (max-width: 768px) {
+    .page-Home {
+        position: relative !important;
+        width: 100% !important;
+    }
+    
+    .page-Home-masthead {
+        position: relative !important;
+        width: 100% !important;
+        min-height: 100vh !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .page-Home-masthead .VideoPane {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0 !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+    }
+    
+    .page-Home-masthead .VideoPane-bg {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 0 !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+    }
+    
+    .page-Home-masthead .VideoPane-video {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+        z-index: 0 !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+    }
+    
+    .page-Home-masthead .VideoPane-overlay {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: -1 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: none !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        pointer-events: none !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .page-Home-masthead .VideoPane-fallback {
+        display: none !important;
+    }
+    
+    .page-Home-masthead .VideoPane-content {
+        position: relative !important;
+        z-index: 2 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Remove any darkening from Art-overlay */
+    .page-Home-masthead .Art-overlay {
+        display: none !important;
+        background: none !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        opacity: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    /* Remove any darkening from VideoPane itself */
+    .page-Home-masthead .VideoPane::before,
+    .page-Home-masthead .VideoPane::after,
+    .page-Home-masthead .VideoPane-bg::before,
+    .page-Home-masthead .VideoPane-bg::after,
+    .page-Home-masthead .VideoPane-content::before,
+    .page-Home-masthead .VideoPane-content::after {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+    
+    /* Remove any box-shadow or filter that might create darkening */
+    .page-Home-masthead .VideoPane,
+    .page-Home-masthead .VideoPane-bg,
+    .page-Home-masthead .VideoPane-content {
+        box-shadow: none !important;
+        filter: none !important;
+    }
+}
+
+/* Forum & Ladder: фон и слой без «прыжка» при прорисовке баннера */
+.forum-header,
+.ladder-header {
+    background-color: #170e09;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.forum-content,
+.ladder-content {
+    background-color: #170e09;
+}
+.forum-logo-img {
+    min-height: 120px;
+}
+.forum-race-icon,
+.forum-post-avatar img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+.ladder-race-icon,
+.ladder-class-icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    object-fit: cover;
+}
+.ladder-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.forum-post-text img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
